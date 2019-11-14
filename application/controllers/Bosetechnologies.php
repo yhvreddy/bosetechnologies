@@ -32,9 +32,9 @@ class Bosetechnologies extends BaseController {
 
 	public function sendmailDetails(){
 	    extract($_REQUEST);
-	    //send mail admin@bosetechnologies.com
-        $tomail = 'vardhan7794@gmail.com';
-        $insertdata = array('name'=>$contactName,'mobile'=>'','mail_id'=>$contactEmail,'content'=>$ContactNote);
+	    //send mail
+        $tomail = 'admin@bosetechnologies.com';
+        $insertdata = array('name'=>$contactName,'mail_id'=>$contactEmail,'content'=>$ContactNote);
         $viewdetails['maildata'] = $insertdata;
         $title = 'Request from '.$contactName;
         $sentstatus = $this->sendemail('mail_templates/request_feedback',$viewdetails,$contactEmail,$tomail,$title,'',$contactName,'Bosetechnologies');
