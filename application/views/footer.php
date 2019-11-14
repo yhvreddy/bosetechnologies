@@ -207,10 +207,10 @@
                         var obj = jQuery.parseJSON(edata);
                         $("#contactForm").trigger("reset");
                         if(obj.code == 0) {
-                            $("#SentStatusMessage").style('color','red');
+                            //$("#SentStatusMessage").style('color','red');
                             $("#SentStatusMessage").text('Your request as been failed to send..!');
                         }else{
-                            $("#SentStatusMessage").style('color','green');
+                            //$("#SentStatusMessage").style('color','green');
                             $("#SentStatusMessage").text('Your request as been send..!');
                         }
                     }
